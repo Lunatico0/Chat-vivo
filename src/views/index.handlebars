@@ -1,0 +1,28 @@
+<h1 class="text-lg sm:text-2xl md:text-5xl fixed top-0 left-0 right-0 z-10 font-bold text-white bg-slate-950 py-4 px-6">Bienvenidos al chat de
+  la
+  comision 70080 de CoderHouse</h1>
+
+<div class="mt-24 pb-24">
+  <div class="relative z-0 overflow-y-auto">
+    <p id="messagesLogs" class="text-white text-xl px-5"></p>
+  </div>
+</div>
+
+<div class="fixed bottom-0 left-0 right-0 flex h-20 justify-between gap-8 px-5 py-5 bg-slate-950">
+  <input placeholder="Ingrese su mensaje" aria-label="Ingrese su mensaje" class="w-3/4 p-2 bg-slate-700 text-white rounded" type="text" id="chatBox">
+  <button id="send" class="w-1/4 hover:bg-slate-500 border-slate-700 border bg-slate-700 rounded text-white">Enviar</button>
+</div>
+
+<style>
+  /* Ajustes adicionales para el área de mensajes */
+  #messagesLogs {
+    max-height: calc(100vh - 8rem);
+    /* Ajusta el tamaño del área de mensajes */
+    overflow-y: auto;
+    /* Añade scroll solo al área de mensajes */
+  }
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="js/main.js"></script>
